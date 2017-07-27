@@ -40,10 +40,60 @@ button:hover {
     box-shadow: 1px 2px 0;
 }
 
+.mainBody {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 canvas {
     border: 1px solid black;
-    margin: auto;
-    display: block;
+    cursor: pointer;
+}
+
+.selectorsOfPenWidth {
+    height: 120px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    flex-direction: column;
+}
+
+.penStyleSelector {
+    box-sizing: border-box;
+    height: 40px;
+    min-width: 50px;
+    text-align: center;
+    font-size: 25px;
+    padding: auto;
+    padding-top: 4px;
+}
+
+.penStyleSelector:hover {
+    background: lightgray;
+    cursor: pointer;
+}
+
+.penStyleSelector:nth-child(1){
+    letter-spacing: -5px;
+    border-bottom: 1px solid black;
+}
+
+.penStyleSelector:nth-child(2) {
+    letter-spacing: -5px;
+    padding-left: 5px;
+}
+
+.penStyleSelector:nth-child(3) {
+    border-top: 1px solid black;
+    padding-left: 8px;
 }
 
 .colorContainer {
@@ -55,7 +105,8 @@ canvas {
 }
 
 .colorBox {
-    border: 5px solid black;
+    border: 2px solid black;
+    border-radius: 25%;
     min-width: 40px;
     height: 40px;
     margin: 25px 10px;
@@ -70,14 +121,20 @@ canvas {
 #eraser {
     padding: 8px 10px;
     margin: 25px 10px;
-    font-size: 20px;
+    font-size: 16px;
     border: 5px solid black;
     transition: all .5s;
+    font-weight: bold;
+    font-family: arial;
 }
 
 #eraser:hover {
     opacity: 0.3;
     cursor: pointer;
+}
+
+#black {
+    background-color: #000;
 }
 
 #red {

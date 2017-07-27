@@ -8,14 +8,22 @@
 <body>
     <h1>Let's draw something!</h1>
     <button>Take a photo of your drawing</button>
-    <canvas id="drawArea" style="background-color: white;"></canvas>
-    <div class="colorContainer">   
+    <div class="mainBody">
+        <canvas id="drawArea" style="background-color: white;"></canvas>
+        <div class="selectorsOfPenWidth">
+            <div class="penStyleSelector" id="boldSelector">\\\\\\</div>
+            <div class="penStyleSelector" id="mediumSelector">\\\</div>
+            <div class="penStyleSelector" id="thinSelector"> \</div>
+        </div>
+    </div>
+    <div class="colorContainer">
+        <div class="colorBox" id="black"></div>
         <div class="colorBox" id="red"></div>
         <div class="colorBox" id="brown"></div>
         <div class="colorBox" id="yellow"></div>
         <div class="colorBox"id="green"></div>
         <div class="colorBox" id="blue"></div>
-        <div id="eraser">ERASE!</div>
+        <div id="eraser">erase!</div>
     </div>     
 <script src="js/script.js"></script>
 </body>

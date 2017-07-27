@@ -11,11 +11,16 @@ var lastX = 0;
 var lastY = 0;
 
 //SELECTING CLICKED COLOR
-var red = document.getElementById('red'),
+var black = document.getElementById('black'), 
+    red = document.getElementById('red'),
     brown = document.getElementById('brown'),
     yellow = document.getElementById('yellow'),
     green = document.getElementById('green'),
     blue = document.getElementById('blue');
+
+black.addEventListener('click', function(){
+    ctx.strokeStyle='#000';
+});
 
 red.addEventListener('click', function(){
     ctx.strokeStyle = '#ed1515';
@@ -33,6 +38,23 @@ blue.addEventListener('click', function(){
     ctx.strokeStyle = '#4da3ff';
 });
     
+//SELECTING FONT WEIGHT
+var bold = document.getElementById('boldSelector'),
+    medium = document.getElementById('mediumSelector'),
+    thin = document.getElementById('thinSelector');
+
+bold.addEventListener('click', function(){
+    ctx.lineWidth = 15;
+});
+
+medium.addEventListener('click', function(){
+    ctx.lineWidth = 8;
+});
+
+thin.addEventListener('click', function(){
+    ctx.lineWidth = 3;
+});
+
 
 function draw(e){
     if(!isDrawing) return;
