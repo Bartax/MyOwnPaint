@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+html, body  {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-image: url('../images/background.png');
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin: 5px auto;
+    font-family: 'Lobster', cursive;
+}
+
+button {
+    display: block;
+    margin: 15px auto;
+    cursor: pointer;
+    background-color: antiquewhite;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 15%;
+    font-size: 15px;
+    font-weight: 900;
+    transition: all .3s;
+    
+}
+
+button:hover {
+    box-shadow: 1px 2px 0;
+}
+
+canvas {
+    border: 1px solid black;
+    margin: auto;
+    display: block;
+}
+
+.colorContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100px;
+    margin: auto;
+}
+
+.colorBox {
+    border: 5px solid black;
+    min-width: 40px;
+    height: 40px;
+    margin: 25px 10px;
+    cursor: pointer;
+    transition: opacity .5s;
+}
+
+.colorBox:hover {
+    opacity: 0.7;
+} 
+
+#eraser {
+    padding: 8px 10px;
+    margin: 25px 10px;
+    font-size: 20px;
+    border: 5px solid black;
+    transition: all .5s;
+}
+
+#eraser:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+#red {
+    background-color: #ed1515;
+}
+
+#brown {
+    background-color: #ca6e0c;
+}
+
+#yellow {
+    background-color: #fff64d;
+}
+
+#blue {
+    background-color: #4da3ff;
+}
+
+#green {
+    background-color: #67ff4d;
+}
